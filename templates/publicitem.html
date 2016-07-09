@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row divider green">
+    <div class="col-md-12"></div>
+</div>
+<div class="row banner menu">
+    <div class="col-md-11 col-md-offset-1 padding-none">
+        <h1>{{ item.name }}
+            <figure class="creator">
+                <img src="{{ creator.picture}}">
+                <figcaption>{{ creator.name }}</figcaption>
+            </figure>
+            </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>{{item.description}}</p>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</a>
+{% endblock %}

@@ -1,0 +1,21 @@
+<div class="row top-menu">
+    <div class="col-md-10 " >
+        <a href="{{url_for('showCatalogs')}}" class="top-menu-big-fnt">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        Catalog App
+        </a>
+    </div>
+	<div class="col-md-2 text-right">
+			{%if 'username' not in session %}
+			<a href="{{url_for('showLogin')}}" class="top-menu-sml-fnt">
+            <span class="glyphicon glyphicon-log-in"  aria-hidden="true"></span>
+            Login </a>
+			{% else %}
+			<a href="{{url_for('disconnect')}}" class="top-menu-sml-fnt">
+            <span class="glyphicon glyphicon-log-out"  aria-hidden="true"></span>
+            Logout </a>
+			{% endif %}
+
+	</div>
+</div>
+
