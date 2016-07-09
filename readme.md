@@ -2,16 +2,15 @@
 Build a web application that provides a list of items within a variety of categories and integrate third party user registration and authentication. Authenticated users should have the ability to post, edit, and delete their own items.
 
 #Technology used:
-1. Python Webserver (BaseHTTPServer, cgi)
+1. Flask framework to build web application
+  * Routing
+  * Jinja2 template
+  * Form request and redirect
+  * message flashing
+  * RESTful API -JSON endpoint
 2. SQLAlchemy - ORM for Python
 3. Sqlite - database
-4. Flask framework to build web application
-	* Routing
-	* Jinja2 template
-	* Form request and redirect
-	* message flashing
-	* RESTful API -JSON endpoint
-5. OAuth 2.0 - Google+ and Facebook Third party Auth Provider
+4. OAuth 2.0 - Google+ and Facebook Third party Auth Provider
 
 #Instructions to setup and launch the application
 1. Launch Vagrant VM (type Vagrant Up)
